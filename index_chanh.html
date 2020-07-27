@@ -2,53 +2,71 @@
 <html lang="en">
 
 <head>
-  <title>CHỢ TRỜI | Webiste Chuyên Mua Bán, Rao Vặt, Trao Đổi Đồ cũ</title>
+  <title>CHỢ TRỜI | Webiste Chuyên Mua Bán, Rao Vặt, Trao Đổi Đồ Cũ</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/nav2.css">
   <link rel="stylesheet" href="css/section.css">
   <link rel="stylesheet" href="libs/@fortawesome/fontawesome-free/css/all.min.css">
 </head>
 
 <body>
   <div class="col">
-    <div class="container">
-      <header>
-        <nav id="fixNav">
-          <img src="images/choTroi2.png" alt="" width="180px" align="left">
-          <ul>
-            <li class="mr-2"></li>
-            <li><a href="#"><i class="fa fa-home"></i> Trang chủ</a></li>
-            <li><a href="#"><i class="fa fa-bitcoin"></i> Tôi bán</a></li>
-            <li><a href="#"><i class="fa fa-commenting"></i> Chat</a></li>
-            <li><a href="#"><i class="fa fa-bell"></i> Thông báo</a></li>
-            <li>
-              <a href="#"><i class="fa fa-id-card"></i> Thêm</a>
-              <ul class="sub-menu">
-                <li><a href="#">Html & CSS</a></li>
-                <li><a href="#">PHP & MySQL</a></li>
-                <li><a href="#">jQuery</a></li>
-              </ul>
+    <header class="thisHeader">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+          <img src="images/choTroi2.png" width="85" height="30" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="thisSearch">
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control" type="search" placeholder="Laptop Dell cũ" aria-label="Search">
+            <button class="btn btn-outline-warning my-2 my-sm-0 mr-sm-2" type="submit" id="buttonSearch">
+              <i class="fa fa-search" aria-hidden="true"></i>
+            </button>
+            <button class="btn my-2 my-sm-0" type="submit" id="buttonDangTin">Đăng tin</i></button>
+          </form>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa fa-shopping-bag" aria-hidden="true"></i> Tôi Bán</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa fa-comment" aria-hidden="true"></i> Tin Nhắn</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa fa-bell" aria-hidden="true"></i> Thông báo</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <i class="fa fa-user" aria-hidden="true"></i> Tài Khoản
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Đăng Nhập</a>
+                <a class="dropdown-item" href="#">Đăng Ký</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Xem Tài Khoản</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Đăng Xuất</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fa fa-question-circle" aria-hidden="true"></i> Trợ Giúp</a>
             </li>
           </ul>
-          <div class="bot-container">
-            <div class="search-container">
-              <form action="#">
-                <input type="text" placeholder="Tìm kiếm trên chợ trời..." name="search">
-                <button type="submit"><i class="fa fa-search"></i></button>
-              </form>
-            </div>
-            <div class="post">
-              <a href="#"> <i class="fa fa-external-link"></i> Đăng tin</a>
-            </div>
-            <a href="#"><i class="fa fa-address-book"></i> Tên Người Dùng</a>
-          </div>
-        </nav>
-      </header>
+
+        </div>
+      </nav>
+    </header>
     <section id="fixSection">
       <article>
         <div class="row" style="background: white;">

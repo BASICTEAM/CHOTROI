@@ -23,7 +23,7 @@
   #fixNav ul li{
     list-style:none inside;
     width: 150px;
-     float: left;
+    float: left;
     line-height: 35px; /*Cho text canh giữa menu*/
     color: #fff;
     padding: 0;

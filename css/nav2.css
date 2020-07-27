@@ -1,0 +1,36 @@
+.thisHeader{
+  background-color: #ffcf66;
+  width: 100%;
+  position: fixed;
+  top: 0; /*Nằm trên cùng*/
+  left: 0; /*Nằm sát bên trái*/
+  z-index: 100000; /*Hiển thị lớp trên cùng*/
+}
+.thisSearch form input{
+  padding-right: 250px;
+  border: 1px solid #1e3d59;
+}
+#navbarSupportedContent ul li a{
+  color: #1e3d59;
+}
+#navbarSupportedContent ul li a:hover{
+  color: #ff6e40;
+}
+#buttonDangTin{
+  color: #1e3d59;
+  border: 1px solid #1e3d59;
+}
+#buttonDangTin:hover{
+  color: white;
+  background-color: #ff6e40;
+  border: 1px solid #ff6e40;
+}
+#buttonSearch{
+  color: #1e3d59;
+  border: 1px solid #1e3d59;
+}
+#buttonSearch:hover{
+  color: white;
+  background-color: #ff6e40;
+  border: 1px solid #ff6e40;
+}
