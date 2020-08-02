@@ -1,0 +1,70 @@
+section {
+    margin: 0;
+    padding: 0;
+    background-color: #f5f0e1;
+    width: 100%;
+    height: 750px;
+}
+
+#loginLeft img {
+    margin-top: 160px;
+    height: 25%;
+}
+
+#loginRight {
+    margin-top: 130px;
+    background-color: #ff6e40;
+    width: 100%;
+    height: 450px;
+    padding: 30px;
+    color: white;
+    border-radius: 10px;
+}
+
+#loginRight h2 {
+    margin-bottom: 20px;
+}
+
+#buttonLogin {
+    width: 150px;
+    color: white;
+    border: 1px solid white;
+}
+
+#buttonLogin:hover {
+    color: #1e3d59;
+    background-color: #ffc13b;
+    border: 1px solid #ffc13b;
+}
+
+#loginOther a {
+    color: white;
+}
+
+
+/* Forgot Password */
+
+#forgotPassLeft img {
+    margin-top: 160px;
+    height: 25%;
+}
+
+#forgotPassRight {
+    margin-top: 130px;
+    background-color: #ff6e40;
+    width: 100%;
+    height: 450px;
+    padding: 30px;
+    color: white;
+    border-radius: 10px;
+}
+
+#forgotPassRight h2 {
+    margin-bottom: 20px;
+}
+
+#buttonForgotPass {
+    margin-left: 150px;
+    margin-top: 30px;
+    width: 200px;
+}

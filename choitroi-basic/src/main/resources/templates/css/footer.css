@@ -1,0 +1,17 @@
+footer{
+    padding: 80px 0 30px 0;
+    background-color: #e6e6e6;
+}
+footer a{
+    color: black;
+}
+footer a:hover{
+    color: black;
+    text-decoration: none;
+}
+.banQuyen{
+    color: #333333;
+    padding-top: 10px;
+    margin: auto;
+    font-size: 90%;
+}

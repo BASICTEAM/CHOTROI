@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{layouts/admin.html}">
+
+<head>
+<title>CHỢ TRỜI | Webiste Chuyên Mua Bán, Trao Đổi Đồ Cũ</title>
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="/css/login.css">
+</head>
+
+<body>
+	<div layout:fragment="content">
+		<div class="col">
+			<div class="row">
+				<div class="col-6 text-center p-5" id="signinLeft">
+					<img src="/images/choTroi2.png" alt="chotroi">
+					<h3>Website Chuyên Mua Bán, Trao Đổi Đồ Cũ</h3>
+				</div>
+				<div class="col-5" id="signinRight">
+					<div th:if="${message == null}">
+						<h2>Đăng Ký Tài Khoản</h2>
+					</div>
+					<div th:if="${message != null}">
+						<h5 th:text="${message}" class="alert alert-success text-center"></h5>
+					</div>
+					<form th:action="@{/users/signup}" method="post" th:object="${shop}">
+						<div class="form-group">
+							<label for="username">Tài khoản:</label> <input type="text"
+								class="form-control" th:field="*{username}"
+								placeholder="Tài khoản" required>
+						</div>
+						<div class="form-group">
+							<label for="password">Mật khẩu:</label> <input type="password"
+								class="form-control" th:field="*{password}"
+								placeholder="Mật khẩu" required>
+						</div>
+						<div class="form-group">
+							<label for="email">Email:</label> <input type="email"
+								class="form-control" th:field="*{email}" placeholder="Email"
+								required>
+						</div>
+						<div class="form-group">
+							<label for="phone">Số điện thoại:</label> <input type="text"
+								class="form-control" th:field="*{phone}"
+								placeholder="Số điện thoại" required>
+						</div>
+						<div class="form-group form-check">
+							<input type="checkbox" class="form-check-input"
+								id="exampleCheck1" required> <label for="agree-term"
+								class="label-agree-term">Tôi đồng ý tất cả các tuyên bố
+								trong <a href="#" class="text-warning">Điều khoản dịch vụ</a>
+							</label>
+						</div>
+						<input class="btn btn-primary" type="submit" value="Đăng ký" />
+					</form>
+				</div>
+			</div>
+		</div>
+		<article class="user_card"></article>
+	</div>
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{layouts/admin.html}">
+
+<head>
+    <title>CHỢ TRỜI | Webiste Chuyên Mua Bán, Rao Vặt, Trao Đổi Đồ Cũ
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="/css/shop.css">
+</head>
+
+<body>
+	<div layout:fragment="content">
+	<div class="col-9 m-auto">
+            <h5>Tài Khoản Của Tôi</h5>
+            <h6>Quản lý thông tin hồ sơ để bảo mật tài khoản</h6>
+        </div>
+        <div class="col-10 m-auto">
+            <hr>
+        </div>
+        <div class="row">
+            <div class="col-4" id="left">
+                <div class="form-group" id="leftText">
+                    <h6>
+                        <i class="fa fa-user-circle" aria-hidden="true"></i> Tài khoản của tôi
+                    </h6>
+                    <li><a th:href="@{/shops/detailshop}" class="text-danger">Hồ
+							sơ</a></li>
+                    <li><a th:href="@{/shops/changepassword}">Đổi mật khẩu</a></li>
+                    <li>
+                        <a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+							Quên mật khẩu
+						</a>
+                        <div class="collapse" id="collapseExample">
+                            <div class="card card-body">
+                                <span>Tài khoản của bạn sẽ bị đăng xuất, nếu muốn tiếp tục <a th:href="@{/users/forgotpassword}" class="text-primary">nhấn vào đây</a>.</span>
+                            </div>
+                        </div>
+                    </li>
+                </div>
+                <div id="leftImg">
+                    <img src="/images/choTroi.png" alt="" class="avatar">
+                    <div class="form-group">
+                        <button>Chọn ảnh</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6" id="right">
+                <div th:if="${message != null}">
+                    <h5 th:text="${message}" class="alert alert-success text-center"></h5>
+                </div>
+                <form th:action="@{/shops/update}" method="post" th:object=${shop}>
+                    <div class="form-group">
+                        <label for="username">Tên đăng nhập:</label> <input type="text" class="form-control" th:field="*{username}" name="username" id="username" aria-describedby="helpId" placeholder="Tên đăng nhập">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label> <input type="email" class="form-control" th:field="*{email}" name="email" id="email" aria-describedby="helpId" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Số điện thoại:</label> <input type="text" class="form-control" th:field="*{phone}" name="phone" id="phone" aria-describedby="helpId" placeholder="Số điện thoại">
+                    </div>
+                    <div class="form-group">
+                        <label for="shop">Tên đại lý:</label> <input type="text" class="form-control" th:field="*{nameShop}" name="shop" id="shop" aria-describedby="helpId" placeholder="Tên đại lý">
+                    </div>
+                    <div class="form-group">
+                        <label for="numberShop">Mã số kinh doanh:</label> <input type="text" class="form-control" th:field="*{numberShop}" name="numberShop" id="numberShop" aria-describedby="helpId" placeholder="Mã số kinh doanh">
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Địa chỉ:</label>
+                        <textarea class="form-control" rows="3" th:field="*{address}" name="address" id="address" aria-describedby="helpId" placeholder="Địa chỉ"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="information">Thông tin:</label>
+                        <textarea class="form-control" rows="3" th:field="*{information}" name="information" id="information" aria-describedby="helpId" placeholder="Địa chỉ"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-outline-warning" id="buttonSave">Lưu</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+	</div>
+    
+</body>
+
+</html>

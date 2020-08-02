@@ -1,0 +1,63 @@
+#fixSection {
+	margin: 100px 0;
+}
+
+.avatar {
+	border: 1px solid black;
+	height: 150px;
+}
+
+#buttonSave {
+	margin-top: 20px;
+	margin-left: 550px;
+	width: 90px;
+}
+
+#left {
+	border-right: 1px solid #cccccc;
+}
+
+#leftImg {
+	margin: 0;
+	padding: 20px 200px;
+}
+
+#leftImg button {
+	margin-top: 5px;
+	width: 150px;
+}
+
+#leftText {
+	margin-top: 50px;
+	margin-left: 200px;
+}
+
+#leftText li {
+	list-style: circle;
+	margin-left: 10px;
+}
+
+#leftText li a {
+	color: #4d4d4d;
+}
+
+#right {
+	margin-top: 20px;
+}
+
+#buttonChangePass {
+	margin-top: 20px;
+	margin-left: 464px;
+	width: 180px;
+}
+
+/* Quên mật khẩu */
+#buttonForgotPassword {
+	margin-left: 180px;
+	margin-top: 30px;
+}
+
+/* find */
+#thisFind {
+	margin-bottom: 160px;
+}

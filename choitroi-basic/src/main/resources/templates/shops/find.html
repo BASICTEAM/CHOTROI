@@ -1,0 +1,35 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorate="~{layouts/admin.html}">
+
+<head>
+<title>CHỢ TRỜI | Webiste Chuyên Mua Bán, Rao Vặt, Trao Đổi Đồ
+	Cũ</title>
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="/css/shop.css">
+</head>
+<body>
+	<div layout:fragment="content" id="thisFind">
+		<div class="col-9 m-auto">
+			<br> <br> <br>
+			<table class="table table-hover">
+				<tr>
+					<td>ID</td>
+					<td>Tài khoản</td>
+					<td>Email</td>
+					<td>Tên Shop</td>
+				</tr>
+				<tr th:each="shop : ${shops}">
+					<td th:text=${shop.id}></td>
+					<td th:text=${shop.username}></td>
+					<td th:text=${shop.email}></td>
+					<td th:text=${shop.nameShop}></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</body>
+</html>

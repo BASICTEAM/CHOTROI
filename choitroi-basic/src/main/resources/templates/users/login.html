@@ -1,0 +1,50 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{layouts/admin.html}">
+
+<head>
+    <title>CHỢ TRỜI | Đăng Nhập</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+
+<body>
+    <div layout:fragment="content">
+        <div class="col">
+            <div class="row">
+                <div class="col-6 text-center p-5" id="loginLeft">
+                    <img src="/images/choTroi2.png" alt="chotroi">
+                    <h3>Website Chuyên Mua Bán, Trao Đổi Đồ Cũ</h3>
+                </div>
+                <div class="col-5" id="loginRight">
+                    <div th:if="${message == null}">
+                        <h2>Đăng Nhập</h2>
+                    </div>
+                    <div th:if="${message != null}">
+                        <h5 th:text="${message}" class="alert alert-danger text-center"></h5>
+                    </div>
+                    <form class="form-group" th:action="@{/users/signin}" th:object="${shop}" method="post">
+                        <div class="form-group">
+                            <label for="name">Tài khoản:</label> <input type="text" class="form-control mr-5" th:field="*{username}" name="use" id="username" placeholder="Tài khoản" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Mật khẩu:</label> <input type="password" class="form-control mr-5" th:field="*{password}" name="pas" placeholder="Mật khẩu" required>
+                        </div>
+                        <div class="form-group text-center mt-4">
+                            <button class="btn my-2 my-sm-0" type="submit" id="buttonLogin">
+								Đăng Nhập</i>
+							</button>
+                        </div>
+                        <div class="form-group text-center m-5" id="loginOther">
+                            <a th:href="@{/users/forgotpassword}">Quên mật khẩu?</a><br> <span>Bạn
+								chưa có tài khoản?</span> <a href="#!/register">Đăng ký</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+</body>
+
+</html>

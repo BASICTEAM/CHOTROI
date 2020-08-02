@@ -1,0 +1,30 @@
+#fixSection{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+h4 {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h4:after {
+    display: inline-block;
+    margin: 0 0 8px 20px;
+    height: 3px;
+    content: " ";
+    text-shadow: none;
+    background-color: #999;
+    width: 400px;
+}
+
+h4:before {
+    display: inline-block;
+    margin: 0 20px 8px 0;
+    height: 3px;
+    content: " ";
+    text-shadow: none;
+    background-color: #999;
+    width: 400px;
+}
